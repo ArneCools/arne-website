@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +24,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.contact-button {
+  @apply bg-cyan-400 py-3 px-8 text-black rounded font-bold transition-all duration-200;
+}
+
+.contact-button:hover {
+  @apply bg-cyan-300;
 }
